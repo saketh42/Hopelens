@@ -6,7 +6,7 @@ import joblib
 import uvicorn
 
 # Load the model
-model = joblib.load_model("XGB.pkl")
+model = joblib.load("XGB.pkl")
 
 app = FastAPI()
 
