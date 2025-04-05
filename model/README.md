@@ -2,7 +2,7 @@
 
 This FastAPI app wraps around a trained machine learning model to predict the **percentage risk of suicide** based on input features. It's intended for educational or prototype use only.
 
----
+<br>
 
 ## 📦 Project Structure
 
@@ -19,7 +19,7 @@ model/
 └── README.md                   # Project documentation
 ```
 
----
+<br>
 
 ## 🚀 API Endpoints
 
@@ -34,7 +34,7 @@ Check if the server is running.
 }
 ```
 
----
+<br>
 
 ### 🔮 `POST /predict`
 
@@ -55,7 +55,7 @@ Predicts the suicide risk percentage using a trained ML model.
 }
 ```
 
----
+<br>
 
 ## 🌟 Risk Interpretation
 
@@ -66,7 +66,7 @@ Predicts the suicide risk percentage using a trained ML model.
 | 61–100%       | High risk. Please seek support from a mental health professional as soon as possible.    |
 
 
----
+<br>
 
 ## 🛠️ Running the App
 
@@ -88,7 +88,7 @@ pip install fastapi uvicorn joblib scikit-learn
 uvicorn main:app --reload --port 5000
 ```
 
----
+<br>
 
 ## 🥚 Example Request
 
@@ -98,7 +98,7 @@ curl -X POST http://localhost:5000/predict \
   -d '{"features": [35, 0, 0, 0, 0, 2, 1]}'
 ```
 
----
+<br>
 
 ## ⚙️ Customizing Logic
 
@@ -114,19 +114,19 @@ else:
 
 ```
 
----
+<br>
 
 ## 📢 Ethical Disclaimer
 
 > This app is meant for **educational or prototype use only**. Suicide risk assessment should be performed by licensed professionals. Always direct users to official mental health support services.
 
----
+<br>
 
 ## 📌 License
 
 This project is licensed for personal, educational, or research purposes only.
 
----
+<br>
 
 ## ❤️ Acknowledgments
 
