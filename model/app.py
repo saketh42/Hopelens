@@ -24,8 +24,9 @@ def read_root():
         "usage": "Use /predict to get predictions"
     }
 
+
 # predict route
-@app.get("/predict")
+@app.post("/predict")
 def predict(data: InputData):
     try:
         # predict probability
@@ -43,9 +44,10 @@ def predict(data: InputData):
             message = "High risk. Please seek support from a mental health professional as soon as possible."
 
         return {
-            "risk_percentage": risk,
+            "risk_percentage": float(risk),
             "message": message
         }
+
 
     except Exception as e:
         return {"error": str(e)}
