@@ -3,7 +3,7 @@ import Logo from "./logo";
 
 function Navbar() {
     return (
-        <header className="w-full py-4 px-6 bg-white/80 backdrop-blur-sm fixed top-0 z-50">
+        <header className="w-full py-4 px-6 bg-gradient-to-br from-rose-50 to-white-100 backdrop-blur-sm fixed top-0 z-50">
             <div className="container mx-auto flex items-center justify-between">
                 <Link to="/" className="flex items-center gap-2">
                     <Logo />
