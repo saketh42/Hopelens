@@ -4,18 +4,18 @@ import Predict from "./pages/Predict";
 import Resources from "./pages/Resources";
 import About from "./pages/About";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import "./index.css";
 
 function App() {
   return (
     <Router>
-       {/* <Routes>
+       <Routes>
          <Route path="/" element={<Home />} />
          <Route path="/predict" element={<Predict />} />
          <Route path="/resources" element={<Resources />} />
          <Route path="/about" element={<About />} />
-       </Routes> */}
-      <Navbar/>
+       </Routes>
     </Router>
   )
 }
