@@ -141,4 +141,4 @@ This project is licensed under the **MIT License**. Educational use only. Not in
 - [scikit-learn](https://scikit-learn.org/)
 - [React.js](https://reactjs.org/)
 - Inspired by the need for accessible mental health technology.
-
+- [Priti Gupta](https://github.com/priti200)
