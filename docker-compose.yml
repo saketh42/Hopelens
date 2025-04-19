@@ -1,0 +1,33 @@
+services:
+  frontend:
+    build:
+      context: ./frontend  # Path to the frontend directory
+    ports:
+      - "80:80"  # Nginx serves the app on port 80
+    networks:
+      - app-network
+    depends_on:
+      - backend
+      - model
+
+  backend:
+    build:
+      context: ./backend  # Path to the Spring Boot project
+    ports:
+      - "8080:8080"
+    networks:
+      - app-network
+    depends_on:
+      - model
+
+  model:
+    build:
+      context: ./model  # Path to the FastAPI project
+    ports:
+      - "5000:5000"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

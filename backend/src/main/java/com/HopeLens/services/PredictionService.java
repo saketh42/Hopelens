@@ -1,15 +1,18 @@
-package com.hopelens.services;
+package com.HopeLens.services;
 
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
-import org.springframework.http.*;
 
 @Service
 public class PredictionService {
 
     public String getPrediction(String inputData) {
         RestTemplate restTemplate = new RestTemplate();
-        String pythonApiUrl = "http://localhost:5000/predict";
+        String pythonApiUrl = "http://model:5000/predict";  // Use the appropriate URL if deploying
         
         // Prepare headers
         HttpHeaders headers = new HttpHeaders();
