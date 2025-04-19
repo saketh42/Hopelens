@@ -56,7 +56,7 @@ function Predict() {
     console.log("Sending features:", featuresArray)
 
     try {
-      const response = await fetch("http://localhost:8080/api/predict", {
+      const response = await fetch("https://hopelens-backend.onrender.com/api/predict", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ feature: featuresArray }),
