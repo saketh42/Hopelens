@@ -12,7 +12,7 @@ public class PredictionService {
 
     public String getPrediction(String inputData) {
         RestTemplate restTemplate = new RestTemplate();
-        String pythonApiUrl = "http://model:5000/predict";  // Use the appropriate URL if deploying
+        String pythonApiUrl = "https://hopelens-model.onrender.com/predict";  // Use the appropriate URL if deploying
         
         // Prepare headers
         HttpHeaders headers = new HttpHeaders();
