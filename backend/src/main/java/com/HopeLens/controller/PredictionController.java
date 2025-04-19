@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.HopeLens.services.PredictionService;
 
-@CrossOrigin(origins = "https://hopelens-frontend.onrender.com")
+@CrossOrigin(origins = "https://hopelens.onrender.com")
 @RestController
 @RequestMapping("/api")
 public class PredictionController {
